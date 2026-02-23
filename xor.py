@@ -34,7 +34,6 @@ epochs = 500
 base_scale = 0.1  # Scaling factor for the dynamic update
 
 print("-" * 50)
-
 for epoch in range(1, epochs + 1):
     # --- Forward Pass ---
     layer_1_in = np.dot(X, W1)
@@ -70,5 +69,5 @@ for epoch in range(1, epochs + 1):
 
 # --- 4. Final Inference ---
 print("-" * 50)
-print("Final Predictions (XOR):")
+print("Final Predictions:")
 print(np.round(layer_2_out, 3))
